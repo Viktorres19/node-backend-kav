@@ -1,0 +1,26 @@
+{
+  "name": "backend-kav",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viktorres19/node-backend-kav.git"
+  },
+  "author": "Viktor Lukyanchenkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Viktorres19/node-backend-kav/issues"
+  },
+  "homepage": "https://github.com/Viktorres19/node-backend-kav#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}
