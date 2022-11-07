@@ -23,3 +23,5 @@ readStream
   .pipe(compressStream)
   .pipe(writeStream)
   .on('error', handleError)
+
+/*Without any examples*/
