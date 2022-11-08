@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const morgan = require('morgan');
 
 const app = express();
 
@@ -12,6 +13,11 @@ const createPath = (page) => path.resolve(__dirname, 'ejs-views', `${page}.ejs`)
 app.listen(PORT, (error) => {
   error ? console.log(error) : console.log(`Listening port ${PORT}`);
 });
+
+//логуючий middleware
+app.use(morgan(':method :url :status :res[content-length] - :response-time ms'));
+//робимо папку загальнодоступною за допомогою middleware
+app.use(express.static('styles'));
 
 app.get('/', (req, res) => {
   const title = 'Home';
